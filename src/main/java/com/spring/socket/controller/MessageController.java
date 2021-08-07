@@ -25,8 +25,8 @@ public class MessageController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @SendTo("/topic/message")
-    public TextMessageDTO broadcastMessage(@Payload TextMessageDTO textMessageDTO) {
-        return textMessageDTO;
-    }
+//    @SendTo("/topic/message")
+//    public TextMessageDTO broadcastMessage(@Payload TextMessageDTO textMessageDTO) {
+//        return textMessageDTO;
+//    }
 }

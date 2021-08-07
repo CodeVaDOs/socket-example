@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Client} from '@stomp/stompjs';
 import MessageCreator from "./components/MessageCreator";
 
-const SOCKET_URL = "/ws-message";
+const SOCKET_URL = "ws://localhost:8080/ws-message";
 
 function App() {
     const [messages, setMessages] = useState([]);
