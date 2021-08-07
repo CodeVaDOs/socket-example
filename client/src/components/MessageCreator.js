@@ -14,7 +14,7 @@ const MessageCreator = () => {
 
     const sendMessage = (e) => {
         e.preventDefault();
-        fetch('http://localhost:9000/send', {
+        fetch('/send', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {'Content-Type': 'application/json'}
